@@ -96,7 +96,7 @@ print(scores) # [10, 30, 50, 90]
 
 #reverse() : 리스트의 순서를 거꾸로 뒤집어주는 함수 정렬이 아니라 현재 순서를 반대로 뒤집는 것
 guests = ["우빈", "수아", "현우"]
-guest.reverse()
+guests.reverse()
 print(guests)  #['현우', '수아', '우빈']
 
 #copy() : 리스트를 그대로 복사해서 새로운 리스트를 만듬 / 새리스트 = 기존리스트.copy()
@@ -152,7 +152,7 @@ cloned["나이"] = 30
 print("original", original) #{'나이': '우빈', '나이':25}
 print("cloned", cloned) #{'이름': '우빈', '나이':30}
 
-#fromkeys(seq[, v]): 리스트나 튜플 등 반복 가능한 값을 사용해서, 키만 잇는 딕셔너리를 생성하는 메서드
+#fromkeys(seq[, v]): 리스트나 튜플 등 반복 가능한 값을 사용해서, 키만 있는 딕셔너리를 생성하는 메서드
 '''-각 키에 대해 같은 값을 지정할 수 있음
 -value를 생략하면 기본값은 None'''
 keys = ["name", "age", "job"]
