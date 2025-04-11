@@ -1,6 +1,6 @@
 #set() 함수
 -고유한 item 들의 정렬되지 않은 모음
--선어니 중괄호 {} 내부에 쉼표(,) 로 구분하여 item 나열
+-선언은 중괄호 {} 내부에 쉼표(,) 로 구분하여 item 나열
 -slicing operation 을 통해 접근불가
 -변경 가능한 아이템등 가질 수 없음
 -아이템 추가, 제거 가능
@@ -32,19 +32,18 @@ for idx, fruit in enumerate(fruits):
 a = {1, 2, 3, 4, 5}
 b = {3, 4, 5}
 result = a.difference(b)
-print(result) #{1, 2, 3}
-
+print(result) #{1, 2}
 a = {10, 20 ,30}
 b = {20, 40}
 print(a-b)  #{10, 30}
 
-#difference.update()
+#difference_update()
 -a.difference_update(b)는 a에서 b와 겹치는 요소를 제거해서 a자체를 바꾼다.
 -반환값은  없다.
 a = {1, 2, 3, 4, 5}
 b = {3, 4, 5}
 a.difference_update(b)
-print(a)  # {1, 2, 3}
+print(a)  # {1, 2}
 
 x = {10, 20, 30, 40}
 y = {20, 50}
@@ -57,7 +56,7 @@ print(x)       # 출력: {10, 30, 40}
 -x가 없으면 그냥 넘어가고 에러가 나지 않음
 s = {1, 2, 3, 4}
 s.discard(3)
-print(s)  #{1, 2, 3}
+print(s)  #{1, 2, 4}
 
 s = {1, 2, 4}
 s.discard(5)
