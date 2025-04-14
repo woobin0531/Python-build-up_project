@@ -72,3 +72,7 @@ print("PYTHON".isupper())      # True
 print(len("hello"))       # 5
 print(len("  hello  "))   # 9 (공백도 포함)
 print(len(""))            # 0
+
+# swapcase()- 대소문자 바꾸기
+text = "PyTHon Is FuN"
+print(text.swapcase())  # 출력: 'pYthON iS fUn'
