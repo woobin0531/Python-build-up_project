@@ -46,7 +46,7 @@ print("셔플된 카드:", cards)
 
 #sample(): w중복 없이, 주어진 시퀀스에서 원하는 개수만큼 랜덤하게 선택해서 리스트로 반환
 import random
-lotto = random.samle(ranfe(1, 46), 6)
+lotto = random.sample(range(1, 46), 6)
 print("로또 번호:", lotto)
 
 #random():0.0 이상 1.0미만의 실수 중에서 무작위 숫자 하나를 반환하는 함수
