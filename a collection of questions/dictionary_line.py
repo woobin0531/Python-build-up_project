@@ -85,3 +85,90 @@ print(max_i)
 scores = {"Alice": 82, "Bob": 95, "Charlie": 78, "David": 90}
 sorted_scores = sorted(scores.items(), key = lambda x: x[1], reverse=True)
 print(sorted_scores)
+
+# 다음과 같은 딕셔너리에서 이름(key)과 점수(value)를 출력하세요.
+scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
+for i in scores:
+  print(f"{i}: {scores[i]}")
+
+# 다음 딕셔너리에 "David": 88을 추가하고, 전체를 출력하세요.
+scores = {"Alice": 85, "Bob": 92}
+scores["David"] = 88
+print(scores)
+
+# 다음 딕셔너리에서 value 값이 90 이상인 사람만 출력하세요.
+scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "David": 90}
+for name, score in scores.items():
+  if scores[name] >= 90:
+    print(f"90점 이상인사람은 {name}입니다")
+
+"""
+for name in scores:
+    if scores[name] >= 90:
+        print(name, scores[name])
+"""
+
+# 점수 평균 내기
+# 아래와 같은 딕셔너리가 있을 때, 전체 사람의 평균 점수를 구해서 출력하세요.
+scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "David": 90}
+scores2 = 0
+for i in scores.values():
+  scores2 += i
+avr = scores2 / len(scores)
+print(f"평균은 {avr}입니다.")
+
+# 최고 점수 받은 사람 찾기
+# 문제: 가장 점수가 높은 사람의 이름과 점수를 출력하세요.
+scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "David": 90}
+most_score = -1
+most_name = ""
+for name, score in scores.items():
+  if score > most_score:
+    most_score = score
+    most_name = name
+print(f"{most_score}점인 {most_name}입니다")
+
+# 두 딕셔너리 병합
+# 문제: 두 개의 딕셔너리를 병합해서 하나의 딕셔너리로 만드세요.
+# 중복 키가 있을 경우 두 번째 딕셔너리의 값을 사용합니다.
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 3, "c": 4}
+
+result = dict1.copy()
+result.update(dict2)
+print(result)
+
+# 학생별 평균 점수 구하기
+# 문제: 다음과 같이 학생별로 과목 점수가 저장된 딕셔너리가 있습니다.
+# 각 학생의 평균 점수를 구해 새로운 딕셔너리로 만드세요.
+scores = {
+    "Alice": {"math": 90, "english": 85, "science": 88},
+    "Bob": {"math": 72, "english": 78, "science": 80},
+    "Charlie": {"math": 95, "english": 100, "science": 98}
+}
+avr_scores = {}
+
+for name, value in scores.items():
+  scores_a = 0
+  for subject, score in value.items():
+    scores_a += score
+  avr = round(scores_a / len(value), 2)
+  avr_scores[name] = avr
+print(avr_scores)
+
+scores = {
+    "Alice": {"math": 90, "english": 85, "science": 88},
+    "Bob": {"math": 72, "english": 78, "science": 80},
+    "Charlie": {"math": 95, "english": 100, "science": 98}
+}
+
+avr_scores = {}
+
+for name, subjects in scores.items():
+    total = 0
+    for subject, score in subjects.items():
+        total += score
+    average = round(total / len(subjects), 2)
+    avr_scores[name] = average
+
+print(avr_scores)
