@@ -170,3 +170,96 @@ def sorted_list(a):
     return sorted(a, key=lambda x: (len(x), x))
 
 sorted_list(["banana", "apple", "kiwi", "grape", "pear", "peach"])
+
+
+# 문제: 세 수 중 가장 큰 수 찾기
+# 정수 3개를 입력받아, 가장 큰 수를 반환하는 함수를 작성하세요.
+# 함수 이름: find_max
+# 입력: 세 개의 정수
+# 반환: 가장 큰 수 (정수)
+def find_max(a, b, c):
+  return max(a, b, c)
+
+print(find_max(2, 3, 4))
+
+# 문자열 길이 구하기
+# 문자열 하나를 입력받아, 그 문자열의 길이를 반환하는 함수를 작성하세요.
+# 함수 이름: string_length
+# 입력: 문자열 1개
+# 반환: 문자열의 길이 (정수)
+def string_length(a):
+  return len(a)
+
+string_length("hello")
+
+# 리스트 요소 합계 구하기
+# 정수로 이루어진 리스트를 입력받아, 요소들의 합을 반환하는 함수를 작성하세요.
+# 함수 이름: list_sum
+# 입력: 정수 리스트
+# 반환: 합계 (정수)
+def list_sum(a):
+  return sum(a)
+print(list_sum([1, 2, 3, 4]))
+
+# 문자열 뒤집기
+# 문자열 하나를 입력받아, 거꾸로 뒤집은 문자열을 반환하는 함수를 작성하세요.
+# 함수 이름: reverse_string
+# 입력: 문자열 1개
+# 반환: 뒤집힌 문자열
+def reverse_string(a):
+  return a[::-1]
+print(reverse_string("hello"))
+
+# 리스트에서 짝수만 추출
+# 정수 리스트를 입력받아, 짝수만 모은 새 리스트를 반환하는 함수를 작성하세요.
+# 함수 이름: get_even_numbers
+# 입력: 정수 리스트
+# 반환: 짝수만 담긴 리스트
+def get_even_numbers(a):
+  return [num for num in a if num % 2 == 0]
+print(get_even_numbers([1, 2, 3, 4, 5]))
+
+# 단어 개수 세기
+# 문자열 하나를 입력받아, 그 안에 있는 단어(word) 의 개수를 반환하는 함수를 작성하세요.
+# (단어는 띄어쓰기로 구분합니다.)
+# 함수 이름: count_words
+# 입력: 문자열 1개
+# 반환: 단어 개수 (정수)
+def count_words(s):
+  a =s.split(" ")
+  return len(a)
+print(count_words("I love Python") )
+
+# 중복 제거 후 정렬
+# 리스트를 입력받아, 중복을 제거하고 오름차순으로 정렬한 새 리스트를 반환하는 함수를 작성하세요.
+# 함수 이름: remove_duplicates_and_sort
+# 입력: 리스트 (숫자 또는 문자열)
+# 반환: 중복 없이 정렬된 리스트
+def remove_duplicates_and_sort(a):
+  b = sorted(set(a))
+  c = list(b)
+  return c
+print(remove_duplicates_and_sort([1, 2, 3, 3, 4]))
+
+# 팩토리얼 계산
+# 양의 정수 하나를 입력받아, 그 수의 팩토리얼을 반환하는 함수를 작성하세요.
+# (팩토리얼: n! = n × (n-1) × (n-2) × ... × 1)
+# 함수 이름: factorial
+# 입력: 양의 정수 1개
+# 반환: 팩토리얼 값 (정수)
+def factorial(n):
+  result = 1
+  for i in range(1, n + 1):
+    result *= i
+  return result
+print(factorial(5))
+
+# 리스트를 문자열로 변환
+# 문자열 리스트를 입력받아, 콤마(,)로 연결된 하나의 문자열로 반환하는 함수를 작성하세요.
+# 함수 이름: list_to_string
+# 입력: 문자열 리스트
+# 반환: 하나의 문자열
+def list_to_string(a):
+  b = ",".join(a)
+  return b
+print(list_to_string(["a", "b", "c"]))
