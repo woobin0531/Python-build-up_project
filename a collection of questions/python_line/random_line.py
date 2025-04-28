@@ -101,7 +101,6 @@ print(random_evens)
 # 하나의 문자열 형태로 이어진 4자리 숫자를 만드세요. 예: "5812"
 import random
 
-#join
 a = random.sample(range(10), 4)
 b = ''.join(str(i) for i in a)
 print(b)
