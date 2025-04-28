@@ -30,3 +30,17 @@ print(fruits[::-1])
 scores = [85, 90, 78, 92, 88]
 # 출력 예시: 433
 print(sum(scores))
+
+6
+# 리스트 요소의 합 구하기
+# 주어진 리스트 [10, 20, 30, 40]의 모든 요소를 더한 결과를 출력하세요.
+a = [10, 20, 30, 40]
+print(sum(a))
+
+7
+# 리스트에서 특정 값 개수 세기
+# 리스트 ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']에서
+# 'apple'이 몇 번 나오는지 세어 출력하세요.
+a = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple']
+b = a.count('apple')
+print(b)

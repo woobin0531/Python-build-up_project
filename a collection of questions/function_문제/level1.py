@@ -86,3 +86,41 @@ print(list_sum([1, 2, 3, 4]))
 def reverse_string(a):
   return a[::-1]
 print(reverse_string("hello"))
+
+11
+# 숫자 리스트가 주어졌을 때,
+# 짝수만 골라서 새 리스트를 만들어 출력하세요.
+def even_thing():
+  things = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  a = [i for i in things if i % 2 == 0]
+  print(a)
+even_thing()
+
+12
+# 문자열에서 모음(a, e, i, o, u)만 골라서 출력하기
+def vowels_pop(text):
+    vowels = "aeiou"
+    result = []
+    for i in text:
+        if i in vowels:
+            result.append(i)
+    return result
+
+text = "beautiful day"
+print(vowels_pop(text))
+
+13
+# 주어진 리스트에서 중복된 값을 제거하고,
+# 중복 없는 리스트를 반환하는 함수 remove_duplicates를 작성하세요.
+def remove_duplicates(a):
+  return list(set(a))
+remove_duplicates([1, 2, 3, 4, 4])
+
+14
+# 문제: 리스트에서 짝수만 골라서 새로운 리스트를 만드는 함수 작성하기
+# 문제설명: 주어진 리스트에서 짝수만 골라서 새로운 리스트를 만들어 반환하는 함수를 작성하세요.
+def get_even_numbers(number):
+  a = [i for i in number if i % 2 == 0]
+  return a
+number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+get_even_numbers(number)
