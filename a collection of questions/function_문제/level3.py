@@ -69,3 +69,23 @@ def factorial(n):
     result *= i
   return result
 print(factorial(5))
+
+6
+# 중첩 리스트(flatten) 만들기, 재귀호출문제
+# 중첩된 리스트(리스트 안에 리스트)를 받아서,
+# 모든 요소를 한 줄(flat)로 만든 새로운 리스트를 반환하는 함수를 작성하세요.
+# 조건:
+# 입력: 중첩된 리스트
+# 반환: 평탄화(flatten)된 리스트
+# print(flatten_list([1, [2, 3], [4, [5, 6]]]))
+# 출력: [1, 2, 3, 4, 5, 6]
+def flatten_list(a):
+  b = []
+  for i in a:
+    if isinstance(i, list):
+      b += flatten_list(i)
+    else:
+      b.append(i)
+  return b
+
+print(flatten_list([1, [2, 3], [4, [5, 6]]]))

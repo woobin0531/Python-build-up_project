@@ -126,3 +126,32 @@ def list_to_string(a):
   b = ",".join(a)
   return b
 print(list_to_string(["a", "b", "c"]))
+
+11
+# 주어진 리스트에서 특정 숫자가 몇 번 등장하는지 세는 함수를 작성하세요.
+# 함수를 사용하여 주어진 리스트에서 특정 숫자의 등장 횟수를 출력해 보세요.
+# my_list = [1, 2, 3, 4, 2, 1, 5, 2, 6]
+# target_number = 2
+def count_number(my_list, target_number):
+  count = 0
+  for num in my_list:
+    if num == target_number:
+      count += 1
+  print(f"{target_number}숫자는 {count}번 입니다.")
+
+my_list = [1, 2, 3, 4, 2, 1, 5, 2, 6]
+target_number = 2
+count_number(my_list, target_number)
+
+12
+# 최댓값과 최솟값을 동시에 반환하는 함수
+# 숫자 리스트를 받아서, 최댓값과 최솟값을 튜플로 반환하는 함수를 작성하세요.
+# 조건
+# 입력: 숫자 리스트
+# 반환: (최댓값, 최솟값) 형태의 튜플
+def find_max_min(a):
+  b = max(a)
+  c = min(a)
+  return (b, c)
+
+print(find_max_min([2, 3, 4, 5, 6]))
