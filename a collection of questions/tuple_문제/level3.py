@@ -57,3 +57,33 @@ max_num = nums[0] min_num = nums[0]
 for i in nums: if i > max_num: max_num = i if i < min_num: min_num = i
 print("최대값:", max_num) print("최소값:", min_num)
 """
+
+6
+# 튜플 불변성 우회 및 값 변경
+# 튜플은 불변(immutable) 자료형이기 때문에 요소를 직접 변경할 수 없습니다.
+# 아래 튜플에서 두 번째 값을 99로 바꾼 새로운 튜플을 만드는 코드를 작성하세요.
+t = (10, 20, 30, 40)
+new_t = t[:1] + (99,) + t[2:]
+print(new_t)
+
+7
+# 튜플 언패킹과 함수 반환값 활용
+# 두 개의 정수를 입력받아, 그 합, 차, 곱, 몫, 나머지를 튜플로 반환하는 함수를 작성하고,
+# 반환된 튜플을 언패킹하여 각각의 값을 출력하세요
+def calc(a, b):
+  return (a + b, a - b, a * b, a // b, a % b)
+
+result = calc(20, 7)
+_sum, diff, prod, quot, remain = result
+
+print("합:", _sum)      # 27
+print("차:", diff)      # 13
+print("곱:", prod)      # 140
+print("몫:", quot)      # 2
+print("나머지:", remain) # 6
+
+8
+# 튜플 컴프리헨션(표현식) 활용
+# 1부터 20까지의 수 중에서 3의 배수만을 포함하는 튜플을 한 줄의 코드로 생성하세요.
+result = tuple(x for x in range(1, 21) if x % 3 == 0)
+print(result)
