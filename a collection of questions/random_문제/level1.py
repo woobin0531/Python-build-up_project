@@ -49,3 +49,34 @@ import random
 s = "abcdefg"
 char = random.choice(s)
 print(char)
+
+7
+# 랜덤 숫자 집합 만들기
+# 1부터 10까지의 정수 중에서 서로 다른 숫자 3개를 랜덤하게 뽑아
+# 집합(set)으로 만들어 출력하세요.
+import random
+
+nums = set(random.sample(range(1, 11), 3))
+print(nums)
+
+8
+# 랜덤 알파벳 집합 생성
+# 알파벳 소문자 중에서 5개를 랜덤하게 뽑아 집합(set)으로 만들고,
+# 그 집합의 길이를 출력하세요
+import random
+import string
+
+letters = set(random.sample(string.ascii_lowercase, 5))
+print(letters)
+print(len(letters))
+
+9
+# 랜덤 리스트에서 중복 제거
+# 1부터 5까지의 숫자 중에서 10개를 랜덤하게 뽑아 리스트로 만들고
+# 이 리스트에서 중복을 제거한 집합(set)을 출력하세요.
+import random
+
+a = [random.randint(1, 5) for i in range(10)]
+print(a)
+set_a = set(a)
+print(set_a)
