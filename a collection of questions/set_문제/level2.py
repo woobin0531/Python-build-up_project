@@ -51,3 +51,44 @@ for word in words:
     a.add(word)
 result = a - b
 print(result)
+
+6
+# 두 집합의 합집합, 교집합, 차집합 구하기
+# 아래 두 집합을 이용해
+# ① 합집합
+# ② 교집합
+# ③ 첫 번째 집합에서 두 번째 집합을 뺀 차집합을 각각 구해 출력하세요.
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7}
+
+# ① 합집합
+union_1 = set1 | set2
+print(union_1)
+# ② 교집합
+print(set1 & set2)
+# ③
+print(set1 - set2)
+
+7
+# 집합의 부분집합, 상위집합 판별
+# 아래 두 집합에서
+# ① set_a가 set_b의 부분집합인지
+# ② set_b가 set_a의 상위집합인지를 각각 True/False로 출력하세요.
+set_a = {2, 4}
+set_b = {2, 4, 6, 8}
+
+# 부분집합 판별
+print(set_a.issubset(set_b))
+
+# 상위집합 판별
+print(set_b.issuperset(set_a))
+
+8
+# 집합의 대칭차집합 구하기
+# 아래 두 집합에서
+# 두 집합 중 하나에만 포함된 원소들의 집합(대칭차집합)을 구해 출력하세요.
+x = {'apple', 'banana', 'cherry'}
+y = {'banana', 'kiwi', 'grape'}
+
+x_y_diff = x ^ y
+print(x_y_diff)
