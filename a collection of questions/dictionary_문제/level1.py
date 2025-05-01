@@ -36,3 +36,23 @@ for i in scores:
 scores = {"Alice": 85, "Bob": 92}
 scores["David"] = 88
 print(scores)
+
+7
+# 딕셔너리 키 리스트 만들기
+# 아래 딕셔너리에서 모든 키(key)만 리스트로 만들어 출력하세요
+fruit_prices = {"apple": 1000, "banana": 800, "orange": 1200}
+print(list(fruit_prices.keys()))
+
+8
+# 딕셔너리 값 변경
+# 아래 딕셔너리에서 "math" 과목의 점수를 95로 변경하세요.
+scores = {"math": 80, "english": 90, "science": 85}
+scores["math"] = 95
+print(scores)
+
+9
+# 딕셔너리 항목 삭제
+# 아래 딕셔너리에서 "cat" 항목을 삭제하세요.
+animals = {"dog": "강아지", "cat": "고양이", "bird": "새"}
+animals.pop("cat")
+print(animals)
