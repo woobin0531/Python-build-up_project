@@ -43,3 +43,23 @@ a = {1, 2, 3, 4}
 b = {3, 4, 5, 6}
 # 출력 예시: {1, 2}
 print(a-b)
+
+7
+# 집합 만들기와 자료형 확인
+# 아래 리스트를 집합(set)으로 변환하고, 그 자료형(type)을 출력하세요.
+numbers = [1, 2, 2, 3, 4]
+set_num = set(numbers)
+print(type(set_num))
+
+8
+# 집합에서 요소 제거
+# 아래 집합에서 'banana'를 제거한 뒤 결과를 출력하세요.
+fruits = {'apple', 'banana', 'cherry'}
+fruits.discard('banana')
+print(fruits)
+
+9
+# 집합의 포함 여부 확인
+# 아래 집합에 숫자 7이 포함되어 있는지 True/False로 출력하세요.
+s = {3, 5, 7, 9}
+print(7 in s)
