@@ -56,3 +56,28 @@ for name, score in scores.items():
     most_score = score
     most_name = name
 print(f"{most_score}점인 {most_name}입니다")
+
+6
+# 두 개의 리스트를 딕셔너리로 변환
+# 아래 두 개의 리스트를 이용해, 과일 이름을 키로, 가격을 값으로 하는 딕셔너리를 생성하세요.
+fruits = ["apple", "banana", "peach"]
+prices = [3000, 2000, 4000]
+fruit_dict = dict(zip(fruits, prices))
+print(fruit_dict)
+
+7
+# 딕셔너리에서 값 기준으로 키 찾기
+# 아래 딕셔너리에서 값이 1인 모든 키를 리스트로 만들어 출력하세요.
+word_count = {'big': 1, 'good': 1, 'sky': 1, 'blue': 0, 'mouse': 1}
+list_word = []
+for word, count in word_count.items():
+  if count == 1:
+    list_word.append(word)
+print(list_word)
+
+8
+# 딕셔너리 컴프리헨션 활용
+# 1부터 5까지의 수를 키로 하고,각 키의 제곱을 값으로 하는 딕셔너리를
+# 딕셔너리 컴프리헨션으로 한 줄에 만드세요
+dict_a = {x: x**2 for x in range(1, 6)}
+print(dict_a)
