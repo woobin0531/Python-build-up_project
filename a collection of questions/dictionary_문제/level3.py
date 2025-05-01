@@ -84,3 +84,68 @@ for name, subjects in scores.items():
     avr_scores[name] = average
 
 print(avr_scores)'''
+
+6
+# setdefault와 defaultdict 활용
+# 문자열 리스트가 주어졌을 때, 각 단어가 등장한 횟수를 세어 딕셔너리로 만드세요.
+# 단, 키가 없을 때 자동으로 0으로 초기화하는 방법을 사용하세요.
+words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+count = {}
+for word in words:
+  count.setdefault(word, 0)
+  count[word] += 1
+print(count)
+
+7
+# 딕셔너리의 값에 리스트 저장 및 추가
+# 학생별로 여러 과목의 점수를 저장하는 딕셔너리가 있습니다.
+# 아래와 같이 데이터를 추가하는 코드를 작성하세요.
+# 철수: 수학 90점, 영어 85점
+# 영희: 수학 95점, 과학 100점
+# (각 학생 이름을 키, 과목과 점수의 튜플을 값의 리스트로 저장
+# 예: {'철수': [('수학', 90), ('영어', 85)], ...})
+scores = {}
+
+scores.setdefault("철수", []).append(('수학', 90))
+scores['철수'].append(('영어', 85))
+
+scores.setdefault('영희', []).append(('수학', 95))
+scores['영희'].append(('과학', 100))
+print(scores)
+
+"""
+scores = {}
+if '철수' not in scores:
+  scores['철수'] = []
+scores['철수'].append(('수학', 90))
+scores['철수'].append(('영어', 85))
+
+if '영희' not in scores:
+  scores['영희'] = []
+scores['영희'].append(('수학', 95))
+scores['영희'].append(('과학', 100))
+print(scores)
+"""
+
+8
+# 딕셔너리의 키와 값 동시 반복 및 평균 계산
+# 아래 딕셔너리에서 for문을 사용해 학생별 점수를 출력하고,
+# 전체 학생의 평균 점수를 마지막에 출력하세요.
+data = {
+    "철수": 98,
+    "영희": 80,
+    "순이": 100,
+    "돌이": 70,
+}
+
+total = 0
+count = 0
+
+for name, score in data.items():
+  print(f"{name} {score}")
+  total += score
+  count += 1
+
+print("-"* 16)
+avr = total // count
+print(f"평균 {avr}")
