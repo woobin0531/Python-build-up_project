@@ -1,0 +1,7 @@
+print(type(31))
+print(type(2.7))
+print(type(True))
+print(type('woobin'))
+print(type([1, 2, 3]))
+print(type((1, 2, 3)))
+print(type({'a': 1, 'b': 3}))
