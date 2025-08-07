@@ -13,6 +13,8 @@ print(my_tuple) # 내부아이템이 list인 경우 변경가능
 my_tuple = ('k', 'o', 'p', 'd')
 print(my_tuple) #재할당은 가능
 '''
+
+
 #count(x) : x의 등장횟수를 반환
 t = (1, 2, 3, 2, 4, 2)
 print(t.count(2))  # 3

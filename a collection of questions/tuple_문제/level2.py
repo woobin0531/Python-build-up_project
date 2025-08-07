@@ -59,6 +59,7 @@ for i in data:
     data1.append(ii)
 print(sum(data1))
 
+7
 # 튜플 내장함수 활용
 # 아래 튜플에서 요소의 개수, 최대값, 최소값을 각각 출력하는 코드를 작성하세요.
 scores = (87, 92, 100, 76, 88)
@@ -66,6 +67,7 @@ print("요소의 개수",len(scores))
 print("최대값", max(scores))
 print("최소값", min(scores))
 
+8
 # 리스트와 튜플 변환
 # 아래 리스트를 튜플로 변환하고, 다시 리스트로 변환하는 코드를 작성하세요.
 data = [10, 20, 30, 40]

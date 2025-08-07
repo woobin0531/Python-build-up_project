@@ -43,8 +43,8 @@ def count_char(x, y):
 print(count_char("banana", "a"))
 
 # 단어 길이 기준 정렬하기
-#주어진 단어 리스트를 단어 길이 기준으로 오름차순 정렬하여 반환하는 함수를 작성하세요.
-#단, 길이가 같으면 사전 순으로 정렬합니다.
+# 주어진 단어 리스트를 단어 길이 기준으로 오름차순 정렬하여 반환하는 함수를 작성하세요.
+# 단, 길이가 같으면 사전 순으로 정렬합니다.
 def sorted_words(words):
   return sorted(words, key= lambda x: (len(x), x)) #key = lambda x: (첫번째 기준, 두번째 기준)
 
@@ -115,7 +115,6 @@ print(check_sign(7))   # 출력: "positive"
 
 # 두 리스트의 교집합 구하기
 # 두 리스트가 주어졌을 때, 공통된 항목만 뽑아 리스트로 반환하는 함수를 작성하세요.
-#예시:
 #입력: [1, 2, 3, 4], [3, 4, 5, 6]
 #출력: [3, 4]
 def same_thing(a, b):
@@ -128,7 +127,6 @@ print(same_thing([1, 2, 3, 4], [3, 4, 5, 6]))
 
 # 특정 글자 개수 세기
 # 문자열과 특정 문자를 입력 받아, 해당 문자가 문자열에 몇 번 등장하는지 반환하는 함수를 작성하세요.
-#예시:
 #입력: "banana", 'a'
 #출력: 3
 def count_char(text, target):
@@ -140,8 +138,7 @@ def count_char(text, target):
 print(count_char("banana", "a"))
 
 # 문자열 압축하기
-# 문제 설명:
-# 연속된 문자가 반복되면 문자와 반복 횟수로 압축한 문자열을 반환하는 함수를 작성하세요.
+# 문제 설명: 연속된 문자가 반복되면 문자와 반복 횟수로 압축한 문자열을 반환하는 함수를 작성하세요.
 # 예: "aaabccccdd" → "a3b1c4d2"
 def hurrykane(s):
   if not s:
@@ -161,8 +158,7 @@ def hurrykane(s):
 print(hurrykane("aabbcccdddd"))
 
 # 단어 길이 기준 정렬
-#문제 설명:
-#단어 리스트를 받아서, 단어의 길이 기준으로 정렬하되, 길이가 같으면 사전 순으로 정렬하여 반환하는 함수를 작성하세요.
+#문제 설명: 단어 리스트를 받아서, 단어의 길이 기준으로 정렬하되, 길이가 같으면 사전 순으로 정렬하여 반환하는 함수를 작성하세요.
 #예:
 # ["banana", "apple", "kiwi", "grape", "pear", "peach"]
 # → ['kiwi', 'pear', 'apple', 'grape', 'peach', 'banana']
